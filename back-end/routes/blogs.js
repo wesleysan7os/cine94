@@ -1,6 +1,6 @@
-import express from 'express';
+import express from 'express'
 
-const router = express.Router();
+const router = express.Router()
 
 const blogs = [
   {
@@ -24,10 +24,15 @@ const blogs = [
       },
     ],
   },
-];
+]
 
 router.get('/', (req, res) => {
   res.send(blogs)
 });
 
-export default router;
+router.post('/', (req, res) => {
+  const blog = req.body
+  blogs.push(blog)
+})
+
+export default router
