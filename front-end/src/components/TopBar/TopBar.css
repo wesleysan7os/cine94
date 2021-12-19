@@ -5,6 +5,7 @@
   height: 50px;
   background-color: white;
   position: sticky;
+  z-index: 1;
   top: 0px;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -28,10 +29,10 @@
 }
 
 .topImg {
-  width: 40;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .topList {
