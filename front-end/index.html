@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>cine94</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Varela&family=Varela+Round&display=swap");
+    * {
+      background-color: rgb(241, 241, 241);
+      font-family: "Josefin Sans", "sans-serif";
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      position: sticky;
+      top: 0;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+    li a {
+      text-decoration: none;
+    }
+    .topLeft,
+    .topRight {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .topCenter {
+      flex: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .topIcon {
+      font-size: 20px;
+      margin-right: 10px;
+      color: #444;
+      cursor: pointer;
+    }
+    .topListItem {
+      margin: 20px;
+      font-size: 18px;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    .topImage {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .topSearchIcon {
+      font-style: 18px;
+      color: #666;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+    .publishingArea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .moviePicture {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+    }
+    .moviesTitle {
+      font-size: 20px;
+      margin: 20px;
+    }
+    .publishButton {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 8px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .postWriting {
+      margin: 30px;
+    }
+    .postWriting textarea {
+      font-size: 20px;
+      font-weight: 200;
+      padding: 20px;
+      background-color: white;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="topLeft">
+        <i class="topIcon fab fa-facebook-square"></i>
+        <i class="topIcon fab fa-twitter-square"></i>
+        <i class="topIcon fab fa-instagram-square"></i>
+        <i class="topIcon fab fa-pinterest-square"></i>
+      </div>
+      <div class="topCenter">
+        <ul class="topList">
+          <li class="topListItem"><a href="#">HOME</a></li>
+          <li class="topListItem"><a href="#">SOBRE</a></li>
+          <li class="topListItem"><a href="#">CONTATO</a></li>
+          <li class="topListItem"><a href="#">NOVO POST</a></li>
+          <li class="topListItem"><a href="#">MEUS POSTS</a></li>
+        </ul>
+      </div>
+      <div class="topRight">
+        <img
+          class="topImage"
+          src="https://avatars.githubusercontent.com/u/12885110?v=4"
+          alt="profilePicture"
+        />
+        <i class="topSearchIcon fas fa-search"></i>
+      </div>
+    </nav>
+    <section class="publishingArea">
+      <div>
+        <img
+          class="moviePicture"
+          src="./assets/pulp-fiction.jpg"
+          alt="Movies Picture"
+        />
+      </div>
+      <div class="postInfo">
+        <span class="moviesTitle">Pulp Fiction: Tempo de Violência</span>
+        <button class="publishButton">Publicar</button>
+      </div>
+      <div class="postWriting">
+        <textarea name="post" cols="120" rows="40">
+Texto da crítica ao filme...</textarea
+        >
+      </div>
+    </section>
+  </body>
+</html>
