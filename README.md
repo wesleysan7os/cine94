@@ -1,6 +1,6 @@
 # Cine94
 
-### A ferramenta web tem como objetivo principal servir de plataforma para que pessoas paixonadas pela sétima arte possam escrever sobre seus mais estimados filmes. O número 94 é uma alusão a um ano muito especial na história do cinema, 1994. Se você ainda não conhece os filmes lançados nesse ano, que tal buscar por críticas ao seu respeito aqui na Cine94? ;)
+### A ferramenta web tem como objetivo principal servir de plataforma para que pessoas apaixonadas pela sétima arte possam escrever sobre seus mais estimados filmes. O número 94 é uma alusão a um ano muito especial na história do cinema, 1994. Se você ainda não conhece os filmes lançados nesse ano, que tal buscar por críticas ao seu respeito aqui na Cine94? ;)
 
 Telas:
 
