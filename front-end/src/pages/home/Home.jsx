@@ -1,5 +1,5 @@
 import Header from "../../components/header/Header";
-import Posts from "../../components/posts/Posts";
+import PostsList from "../../components/posts/PostsList";
 import SideBar from "../../components/sideBar/SideBard";
 import "./Home.css";
 
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <div className="home">
         <SideBar />
-        <Posts />
+        <PostsList />
       </div>
     </>
   );
