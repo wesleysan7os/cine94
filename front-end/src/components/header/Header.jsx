@@ -1,4 +1,4 @@
-import "./Header.css"; 
+import "./header.css"; 
 import headerImg from "../../assets/images/cinema.jpg";
 
 export default function Header() {
