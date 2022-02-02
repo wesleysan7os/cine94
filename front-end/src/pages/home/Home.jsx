@@ -1,5 +1,5 @@
 import Header from "../../components/header/Header";
-import PostsList from "../../components/posts/PostsList";
+import PostsList from "../../components/postsList/PostsList";
 import SideBar from "../../components/sideBar/SideBard";
 import "./home.css";
 
