@@ -2,7 +2,7 @@ import "./sideBar.css";
 
 export default function SideBar() {
   return (
-    <div className="sidebar">
+    <aside className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
@@ -35,6 +35,6 @@ export default function SideBar() {
           <i className="sidebarIcon fa-brands fa-instagram-square"></i>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }

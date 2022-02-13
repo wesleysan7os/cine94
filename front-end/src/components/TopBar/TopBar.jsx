@@ -3,7 +3,7 @@ import profilePicture from "../../assets/images/profile-picture.jpeg";
 
 export default function TopBar() {
   return (
-    <div className="top">
+    <nav className="top">
       <div className="topLeft">
         <i className="topIcon fa-brands fa-facebook-square"></i>
         <i className="topIcon fa-brands fa-twitter-square"></i>
@@ -27,6 +27,6 @@ export default function TopBar() {
         />
         <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
       </div>
-    </div>
+    </nav>
   );
 }

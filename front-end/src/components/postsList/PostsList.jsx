@@ -28,9 +28,7 @@ export default function Posts() {
   return (
     <div className="posts">
       { postsList && 
-        postsList.map((post) => {
-          <Post data={post} key={post.id}/>
-        })
+        postsList.map(post => <Post postData={post} key={post.id} />)
       }
     </div>
   );
