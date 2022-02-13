@@ -1,15 +1,15 @@
 import "./post.css";
 import postImage from "../../assets/images/pulpfiction.jpg";
-export default function Post(props) {
+export default function Post({title, author, text}) {
   return (
-    <div className="post">
+    <article className="post">
       <img className="postImg" src={postImage} alt="post image" />
       <div className="postInfo">
-        <span className="postAuthor">Author: {props.author}</span>
-        <span className="postTitle">{props.title}</span>
+        <span className="postAuthor">Author: {author}</span>
+        <span className="postTitle">{title}</span>
         <hr />
-        <div className="postDescription">{props.description}</div>
+        <div className="postDescription">{text}</div>
       </div>
-    </div>
+    </article>
   );
 }; 

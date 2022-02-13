@@ -1,21 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import api from "../../api";
 import Post from "../post/Post";
+import { toast } from "react-toastify";
 import "./postsList.css";
 
 export default function Posts() {
-  const [img, setImg] = useState("../../assets/images/pulpfiction.jpg");
-  const [author, setAuthor] = useState("Wesley Santos");
-  const [title, setTitle] = useState("Pulp Fiction vale a pena?");
-  const [description, setDescription] = useState("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed quisquam voluptas culpa quos, autem illum sequi veniam quia tenetur incidunt? Quos obcaeca Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sed quisquam voluptas culpa quos, autem illum sequi veniam quia tenetur incidunt? Quos obcaeca");
+  const [postsList, setPostsList] = useState("");
+
+  function getPostsList() {
+    api
+      .get(`/blogs`)
+      .then((response) => {
+        setPostsList(response.data);
+      })
+      .catch((error) => {
+        let msg = "";
+        if (error.response) msg = error.response.data.error;
+        else msg = "Network failed";
+        toast.error(msg);
+      });
+  }
+
+  useEffect(() => {
+    getPostsList();
+  }, []);
 
   return (
     <div className="posts">
-      <Post img={img} author={author} title={title} description={description}/>
-      <Post img={img} author={author} title={title} description={description}/>
-      <Post img={img} author={author} title={title} description={description}/>
-      <Post img={img} author={author} title={title} description={description}/>
-      <Post img={img} author={author} title={title} description={description}/>
-      <Post img={img} author={author} title={title} description={description}/>
+      { postsList && 
+        postsList.map((post) => {
+          <Post data={post} key={post.id}/>
+        })
+      }
     </div>
   );
 }
