@@ -1,6 +1,6 @@
-import TopBar from "./components/topBar/TopBar";
-import Home from "./pages/home/Home";
-import SinglePost from "./pages/singlePost/SinglePost";
+import TopBar from "./components/TopBar";
+import Home from "./pages/Home";
+import SinglePost from "./pages/SinglePost";
 
 function App() {
   return (

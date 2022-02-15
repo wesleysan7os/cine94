@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import api from "../../api";
-import Post from "../post/Post";
+import Post from "../Post";
 import { toast } from "react-toastify";
 import "./postsList.css";
 
