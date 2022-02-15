@@ -1,13 +1,13 @@
 import TopBar from "./components/TopBar";
 import Home from "./pages/Home";
-import PostDetails from "./pages/PostDetails";
+import PostPage from "./pages/PostPage";
 
 function App() {
   return (
     <>
       <TopBar />
-      <Home />
-      {/* <PostDetails /> */}
+      {/* <Home /> */}
+      <PostPage />
     </>
   );
 }

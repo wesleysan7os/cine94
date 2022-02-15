@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import api from "../../api";
-import Post from "../Post";
+import PostThumbnail from "../PostThumbnail";
 import { toast } from "react-toastify";
 import "./postsList.css";
 
@@ -28,7 +28,7 @@ export default function Posts() {
   return (
     <div className="posts">
       { postsList && 
-        postsList.map(post => <Post postData={post} key={post.id} />)
+        postsList.map(post => <PostThumbnail postData={post} key={post.id} />)
       }
     </div>
   );
