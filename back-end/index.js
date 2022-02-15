@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import blogsRoutes from './routes/blogs.js'
+import postsRoutes from './routes/posts.js'
 import cors from "cors";
 
 const app = express();
@@ -8,10 +8,10 @@ app.use(cors());
 const PORT = 5000;
 
 app.use(bodyParser.json()); 
-app.use('/blogs', blogsRoutes); 
+app.use('/posts', postsRoutes); 
 
 app.get('/', (req, res) => {
-  res.redirect('/blogs');
+  res.redirect('/posts');
 })
 
 app.listen(PORT, () => {

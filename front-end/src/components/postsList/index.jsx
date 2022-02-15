@@ -9,7 +9,7 @@ export default function Posts() {
 
   function getPostsList() {
     api
-      .get(`/blogs`)
+      .get(`/posts`)
       .then((response) => {
         setPostsList(response.data);
       })
