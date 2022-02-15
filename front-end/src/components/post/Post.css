@@ -12,6 +12,12 @@
 
 .postInfo {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postPreview {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }

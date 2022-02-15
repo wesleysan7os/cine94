@@ -1,18 +1,4 @@
-.wrapper {
-  position: relative;
-  padding: 0;
-}
-
 .gold-star {
   overflow: hidden;
   color: gold;
-}
-
-.grey-star {
-  position: absolute;
-  width: 100px;
-  top: 0px;
-  left: 0px;
-  color: lightgray;
-  z-index: -1;
 }

@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <TopBar />
-      {/* <Home /> */}
-      <PostDetails />
+      <Home />
+      {/* <PostDetails /> */}
     </>
   );
 }
