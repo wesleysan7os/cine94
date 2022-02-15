@@ -1,21 +1,24 @@
-import "./postDetails.css";
+import "./postThumbnail.css";
 import postImage from "../../assets/images/pulpfiction.jpg";
-export default function PostDetails() {
+import Star from "../Star";
+
+export default function PostThumbnail() {
   return (
-    <div class="postDetails">
-      <div className="postDetailsWrapper">
-        <img className="postDetailsImg" src={postImage} alt="post image" />
-        <h1 className="postDetailsTitle">
+    <div className="postThumbnail">
+      <div className="wrapper">
+        <img className="img" src={postImage} alt="post image" />
+        <h1 className="title">
           Pulp Fiction vale a pena?
-          <div className="postDetailsEdit">
-            <i className="postDetailsIcon fas fa-edit"></i>
-            <i className="postDetailsIcon fas fa-trash-alt"></i>
+          <div className="edit">
+            <i className="icon fas fa-edit"></i>
+            <i className="icon fas fa-trash-alt"></i>
           </div>
         </h1>
-        <div className="postDetailsInfo">
-          <span className="postDetailsAuthor">Author: <b>Wesley Santos</b></span>
+        <div className="info">
+          <span className="author">Author: <b>Wesley Santos</b></span>
         </div>
-        <p className="postDetailsDescription">
+        <Star rating={2.7} />
+        <p className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus eligendi iusto
           asperiores voluptate perspiciatis. Magnam similique quasi mollitia doloribus corporis
           quibusdam impedit earum ipsa ab numquam dolorem, beatae sint!Lorem ipsum dolor sit amet
