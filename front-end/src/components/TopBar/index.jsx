@@ -23,7 +23,7 @@ export default function TopBar() {
         <img
           className="topImg"
           src={profilePicture}
-          alt="Profile Picture"
+          alt="Profile"
         />
         <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
       </div>

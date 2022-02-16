@@ -6,7 +6,7 @@ export default function PostDetails() {
   return (
     <div className="postDetails">
       <div className="wrapper">
-        <img className="img" src={postImage} alt="post image" />
+        <img className="img" src={postImage} alt="post" />
         <h1 className="title">
           Pulp Fiction vale a pena?
           <div className="edit">

@@ -8,7 +8,7 @@ export default function SideBar() {
         <img
           className="sidebarImg"
           src="https://avatars.githubusercontent.com/wesleysan7os"
-          alt="MyProfile Picture"
+          alt="MyProfile"
         />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
