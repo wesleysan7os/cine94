@@ -1,5 +1,6 @@
-import "./topBar.css";
 import profilePicture from "../../assets/images/profile-picture.jpeg";
+import { Link } from "react-router-dom";
+import "./topBar.css";
 
 export default function TopBar() {
   return (
@@ -12,7 +13,7 @@ export default function TopBar() {
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className="topListItem">Home</li> 
+          <li className="topListItem"><Link to="/" style={{ textDecoration: "none", color: "inherit"}}>Home</Link></li> 
           <li className="topListItem">About</li>
           <li className="topListItem">Contact</li>
           <li className="topListItem">Write</li>

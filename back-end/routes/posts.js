@@ -11,6 +11,11 @@ router.get("/", (req, res) => {
   res.send(posts);
 });
 
+router.get("/posts/:id", (req, res) => {
+  const { id } = req.params;
+  res.send(posts.find(post => post.id === +id));
+});
+
 router.post("/", (req, res) => {
   const blog = req.body;
   posts.push(blog);

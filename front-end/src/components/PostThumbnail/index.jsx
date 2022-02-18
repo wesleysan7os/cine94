@@ -2,22 +2,22 @@ import "./postThumbnail.css";
 import postImage from "../../assets/images/pulpfiction.jpg";
 import Star from "../Star";
 
-export default function PostThumbnail({ postData, navigate }) {
-  function handleNavigate() {
-    navigate(postData.id);
+export default function PostThumbnail({ postData, onNavigate }) {
+  function handleClick() {
+    onNavigate(postData.id);
   } 
   
   return (
     <article className="post">
-      <img className="postImg" src={postImage} alt="post" onClick={handleNavigate}/>
+      <img className="postImg" src={postImage} alt="post" onClick={handleClick}/>
       <div className="postInfo">
         <span className="postAuthor">Author: {postData.author}</span>
         <Star rating={postData.rating} />
       </div>
-      <div className="postPreview" onClick={handleNavigate}>
+      <div className="postPreview" onClick={handleClick}>
         <span className="postTitle">{postData.title}</span>
         <hr />
-        <div className="postDescription">{postData.text} onClick={handleNavigate}</div>
+        <div className="postDescription" onClick={handleClick}>{postData.text}</div>
       </div>
     </article>
   );

@@ -24,7 +24,7 @@ export default function Posts() {
   }
 
   function handleNavigate(id) {
-    navigate(`/posts/${id}`, { replace: false });
+    navigate(`/posts/${id}`);
   } 
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function Posts() {
     <div className="posts">
       { postsList && 
         postsList.map(post => {
-          return <PostThumbnail postData={post} key={post.id} navigate={handleNavigate} />
+          return <PostThumbnail postData={post} key={post.id} onNavigate={handleNavigate} />
         })
       }
     </div>
