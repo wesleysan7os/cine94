@@ -1,8 +1,8 @@
 import SideBar from '../../components/SideBar';
 import PostDetails from "../../components/PostDetails";
-import "./postPage.css";
+import "./singlePost.css";
 
-export default function PostPage() {
+export default function SinglePost() {
   return (
     <div className="singlePost">
       <SideBar />
