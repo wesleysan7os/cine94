@@ -6,6 +6,18 @@
   margin-left: 150px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.headerInfo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+}
+
+.headerInfo .writeInput {
+  padding-left: 5px;
 }
 
 .writeIcon {
@@ -22,7 +34,7 @@
 }
 
 .writeInput {
-  font-size: 30px;
+  font-size: 22px;
   border: none;
   padding: 20px;
   width: 70vw;
