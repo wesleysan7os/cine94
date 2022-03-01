@@ -1,8 +1,33 @@
-import "./postDetails.css";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
+import api from "../../api";
 import postImage from "../../assets/images/pulpfiction.jpg";
 import Star from "../Star";
+import "./postDetails.css";
 
 export default function PostDetails() {
+  const [post, setPost] = useState(null);
+  const { id } = useParams();
+
+  function getPost() {
+    api
+      .get(`/posts/${id}`)
+      .then((response) => {
+        setPost(response.data);
+      })
+      .catch((error) => {
+        let msg = "";
+        if (error.response) msg = error.response.data.error;
+        else msg = "Network failed";
+        toast.error(msg);
+      });
+  }
+
+  useEffect(() => {
+    getPost();
+  }, []);
+
   return (
     <div className="postDetails">
       <div className="wrapper">
